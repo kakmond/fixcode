@@ -1,6 +1,5 @@
 package fixcode;
 
-//TODO Write class Javadoc
 /**
  * A simple model for a Student.
  * 
@@ -22,17 +21,16 @@ public class Student extends Person {
 
 	/**
 	 * Return a string representation of this Student.
+	 * 
 	 * @return a string representation of this Student.
 	 */
 	public String toString() {
 		return String.format("Student %s (%d)", getName(), id);
 	}
 
-	// TODO Fix the parameter!
-	// TODO Write Javadoc and fix equals: two objects are equal if
-	// TODO they are both Students, have same name, *and* have same id.
-	// TODO Use the 4-step template for equals in the Fundamental Methods
-	// handout.
+	/**
+	 * two objects are equal if name and id are same
+	 */
 	public boolean equals(Object obj) {
 		if (obj == null)
 			return false;
@@ -40,9 +38,9 @@ public class Student extends Person {
 			return false;
 		Student other = (Student) obj;
 		return name.equalsIgnoreCase(other.name) && this.id == other.id;
-		
-	}
 
+	}
+	
 	/**
 	 * get id of student
 	 * 
@@ -55,9 +53,10 @@ public class Student extends Person {
 	/**
 	 * Set or change the ID of student
 	 * 
-	 * @param id is the ID of student
+	 * @param id is the ID of student that you want to set
 	 */
 	public void setId(long id) {
 		this.id = id;
 	}
+	
 }
