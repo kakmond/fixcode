@@ -12,6 +12,7 @@ public class Person {
 
 	/**
 	 * Initialize a new Person object.
+	 * @param name is the name of person
 	 */
 	public Person(String name) {
 		this.name = name;
