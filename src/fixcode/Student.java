@@ -6,6 +6,7 @@ package fixcode;
  * @author Wongsathorn Panichkurkul
  */
 public class Student extends Person {
+	/** the ID of student */
 	private long id;
 
 	/**
